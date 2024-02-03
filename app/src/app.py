@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, flash, redirect, render_template, request, session
 
 # Create a Flask application instance
 app = Flask(__name__)
@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Define a route and corresponding view function
 @app.route('/')
 def index():
-    return 'Hello, World!'
+    return 'Hello, World! My name is Enes yo'
 
 # Run the Flask application
 if __name__ == '__main__':
@@ -14,9 +14,3 @@ if __name__ == '__main__':
     #helloooooo
     #hello 2
 
-i = 1
-while i>=1:
-    if i==5:
-        break
-    else:
-        i+=1
